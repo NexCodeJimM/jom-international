@@ -7,8 +7,7 @@ sendgrid.setApiKey(process.env.SENDGRID_API_KEY);
 // Initialize CORS middleware
 const cors = Cors({
 	origin: [
-		"https://jom-international-git-main-rjmendoza-jomintlcom.vercel.app/",
-		"https://jom-international-m4bocw0ly-rjmendoza-jomintlcom.vercel.app",
+		"https://jom-international-git-main-rjmendoza-jomintlcom.vercel.app",
 		"http://localhost:3000",
 		"https://jom-international.vercel.app/",
 	], // Add your allowed origins here
@@ -17,9 +16,6 @@ const cors = Cors({
 
 async function sendEmail(req, res) {
 	try {
-		// Apply CORS middleware
-		await cors(req, res);
-
 		// Use sendgrid API to send email
 		await sendgrid.send({
 			to: "inquiry@jomintl.com", // Email where clients will receive emails.
@@ -71,4 +67,15 @@ async function sendEmail(req, res) {
 	}
 }
 
-export default sendEmail;
+// Apply CORS middleware at the API route level
+export default async function handler(req, res) {
+	// Run cors middleware
+	await cors(req, res);
+
+	// Check for the request method and call the corresponding handler function
+	if (req.method === "POST") {
+		return sendEmail(req, res);
+	} else {
+		return res.status(405).json({ error: "Method Not Allowed" });
+	}
+}
