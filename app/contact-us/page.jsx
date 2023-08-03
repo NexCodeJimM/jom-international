@@ -68,6 +68,11 @@ const contact = () => {
 					method: "POST",
 				});
 
+				// Check if the response has content before parsing as JSON
+				if (!res.ok) {
+					throw new Error("API request failed");
+				}
+
 				const data = await res.json(); // Parse the JSON response
 
 				if (data.success) {
