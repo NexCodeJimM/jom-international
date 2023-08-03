@@ -4,13 +4,15 @@ import Cors from "cors";
 // Initialize sendgrid API key
 sendgrid.setApiKey(process.env.SENDGRID_API_KEY);
 
-// Initialize CORS middleware
+// Apply CORS middleware at the API route level
 const cors = Cors({
 	origin: [
 		"https://jom-international-git-main-rjmendoza-jomintlcom.vercel.app",
 		"http://localhost:3000",
 		"https://jom-international.vercel.app/",
-	], // Add your allowed origins here
+		"76.76.21.164:443",
+		// Add your allowed origins here
+	],
 	methods: ["POST"], // The HTTP methods you want to allow
 });
 
@@ -67,7 +69,6 @@ async function sendEmail(req, res) {
 	}
 }
 
-// Apply CORS middleware at the API route level
 export default async function handler(req, res) {
 	// Run cors middleware
 	await cors(req, res);
