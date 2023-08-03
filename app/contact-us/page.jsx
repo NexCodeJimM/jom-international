@@ -50,7 +50,6 @@ const contact = () => {
 	// Handling form submit
 	const handleSubmit = async (e) => {
 		e.preventDefault();
-
 		let isValidForm = handleValidation();
 
 		if (isValidForm) {
@@ -71,13 +70,12 @@ const contact = () => {
 
 				const data = await res.json(); // Parse the JSON response
 
-				if (data.error) {
-					console.log(data.error);
-					setShowSuccessMessage(false);
-					setShowFailureMessage(true);
-				} else {
+				if (data.success) {
 					setShowSuccessMessage(true);
 					setShowFailureMessage(false);
+				} else {
+					setShowSuccessMessage(false);
+					setShowFailureMessage(true);
 				}
 			} catch (error) {
 				console.log(error);
