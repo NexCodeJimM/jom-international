@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Features = () => {
 	return (
-		<section className="w-screen flex-center flex-col mt-28">
+		<section className="w-screen flex-center flex-col mt-28 overflow-hidden">
 			<h1 className="subhead_text text-center">Our Features & Services</h1>
 
 			<p className="subdesc text-center">

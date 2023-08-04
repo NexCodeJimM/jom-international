@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Network = () => {
 	return (
-		<section className="w-screen flex-center flex-col mt-28 mb-20">
+		<section className="w-screen flex-center flex-col mt-28 mb-20 overflow-hidden">
 			<div className="flex-row-reverse gap-16 mt-20 md:flex px-10">
 				{/* Image */}
 				<Image

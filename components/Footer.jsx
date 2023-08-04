@@ -12,7 +12,7 @@ import {
 
 const Footer = () => {
 	return (
-		<footer className="w-screen mt-10">
+		<footer className="w-screen mt-10 overflow-hidden">
 			<div className="py-1 bg-gradient-to-r from-orange-600 to-amber-500" />
 
 			<div className="bg-[#252525] flex-col flex-center gap-5 text-white text-lg font-mulish py-8 sm:flex-row flex-between px-28">

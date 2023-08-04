@@ -27,7 +27,7 @@ const aboutus = () => {
 			</div>
 
 			{/* Mission */}
-			<div className="w-screen flex-col flex-center mt-28 bg-[#D2C4B6] bg-opacity-20 sm:flex-row gap-3">
+			<div className="w-screen flex-col flex-center mt-28 bg-[#D2C4B6] bg-opacity-20 sm:flex-row gap-3 overflow-hidden">
 				<div className="sm:px-16">
 					<Image
 						src="/assets/images/mission2.jpg"
@@ -73,7 +73,7 @@ const aboutus = () => {
 			</div>
 
 			{/* Values */}
-			<div className="w-screen flex-col flex-center mt-28 bg-[#D2C4B6] bg-opacity-20 sm:flex-row gap-3">
+			<div className="w-screen flex-col flex-center mt-28 bg-[#D2C4B6] bg-opacity-20 sm:flex-row gap-3 overflow-hidden">
 				<div className="sm:px-16">
 					<Image
 						src="/assets/images/values2.jpg"

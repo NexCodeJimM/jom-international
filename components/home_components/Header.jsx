@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Header = () => {
 	return (
-		<section className="w-screen flex-center flex-col mt-24">
+		<section className="w-screen flex-center flex-col mt-24 overflow-hidden">
 			<h1 className="head_text text-center">
 				Connecting the World&nbsp;
 				<br className="max-md:hidden" />

@@ -4,19 +4,19 @@ import Link from "next/link";
 
 const FAQ = () => {
 	return (
-		<section className="w-screen bg-[#D2C4B6] bg-opacity-20 mt-28 flex-col">
+		<section className="w-screen bg-[#D2C4B6] bg-opacity-20 mt-28 flex-col overflow-hidden">
 			<h1 className="subhead_text text-center pt-20 pb-16">
 				We can help you solve these questions
 			</h1>
 
-			<div className="flex-row gap-32 md:flex">
+			<div className="flex-row flex-center gap-32 md:flex">
 				<div className="relative">
 					<Image
 						src="/assets/images/question.jpeg"
 						width={600}
 						height={800}
 						alt="meeting"
-						className="rounded-e-3xl mb-28"
+						className="rounded-3xl mb-28"
 					/>
 				</div>
 
