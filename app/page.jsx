@@ -12,7 +12,7 @@ const Home = () => {
 		<div className="flex-col w-screen">
 			<Header />
 			<Features />
-			<FAQ />
+			{/* <FAQ /> */}
 			<Network />
 		</div>
 	);
