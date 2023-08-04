@@ -12,7 +12,7 @@ import {
 
 const Footer = () => {
 	return (
-		<footer className="w-screen flex-none mt-10 overflow-hidden">
+		<footer className="max-auto max-w-screen-2xl mt-10 overflow-hidden">
 			<div className="py-1 bg-gradient-to-r from-orange-600 to-amber-500" />
 
 			<div className="bg-[#252525] flex-col flex-center gap-5 text-white text-lg font-mulish py-8 sm:flex-row flex-between px-28">
@@ -67,7 +67,7 @@ const Footer = () => {
 				</div>
 			</div>
 
-			<div className="mx-auto w-full max-w-screen-2xl p-4 py-6 bg-[#494949] lg:py-8">
+			<div className="mx-auto w-screen max-w-full p-4 py-6 bg-[#494949] lg:py-8">
 				<div className="md:flex md:justify-between">
 					<div className="mb-6 md:mb-0">
 						<Link href="https://flowbite.com/" class="flex items-center">

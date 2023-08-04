@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const SiteSelect = () => {
 	return (
-		<nav className="flex-between flex-none w-screen py-3 px-20 bg-[#213062] overflow-hidden">
+		<nav className="flex-none w-screen py-3 px-20 bg-[#213062] overflow-hidden">
 			{/* Desktop Navigation */}
 			<div className="sm:flex hidden">
 				<div className="flex gap-3 text-xs md:gap-5">
