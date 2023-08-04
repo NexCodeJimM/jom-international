@@ -9,7 +9,7 @@ const Nav = () => {
 	const [toggleDropdown, setToggleDropdown] = useState(false);
 
 	return (
-		<nav className="flex-between flex-none w-screen py-5 px-20 border-b-2 border-bg-[#D8D8D8] overflow-hidden">
+		<nav className="flex-between flex-none w-screen py-5 px-20 border-b-2 border-bg-[#D8D8D8]">
 			<Link href="/" className="flex gap-2 flex-center">
 				<Image
 					src="/assets/images/logo.png"
@@ -87,7 +87,7 @@ const Nav = () => {
 							</Link>
 
 							<Link
-								href="/"
+								href="/contact-us"
 								onClick={() => {
 									setToggleDropdown(false);
 								}}
