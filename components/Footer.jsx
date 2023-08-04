@@ -67,84 +67,93 @@ const Footer = () => {
 				</div>
 			</div>
 
-			<div className="bg-[#494949] flex-col flex-center gap-10 text-white text-lg font-mulish py-8 sm:flex-row flex-between px-28">
-				<div className="flex-col">
-					<Image
-						src="/assets/images/logo-white.png"
-						alt="logo-white"
-						width={200}
-						height={200}
-					/>
-
-					<div className="flex flex-center gap-2">
-						<Email
-							width={15}
-							height={15}
-							alt="email-icon"
-							className="fill-white"
-						/>
-						<p className="text-sm font-mulish text-center py-3">
-							inquiry@jomintl.com
-						</p>
-					</div>
-				</div>
-
-				{/* Company */}
-				<div className="flex-col">
-					<h3 className="font-mulish font-bold">Company</h3>
-
-					<div className="border border-[#5E5E5E] w-32 my-3" />
-
-					<div className="grid grid-row-5 gap-3">
-						<Link href="/about-us" className="footer_links">
-							About Us
-						</Link>
-
-						<Link href="/our-services" className="footer_links">
-							Services
-						</Link>
-
-						<Link href="/" className="footer_links">
-							Careers
-						</Link>
-
-						<Link href="/" className="footer_links">
-							Privacy Policy
-						</Link>
-
-						<Link href="/" className="footer_links">
-							Terms of Service
+			<div className="mx-auto w-full max-w-screen-2xl p-4 py-6 bg-[#494949] lg:py-8">
+				<div className="md:flex md:justify-between">
+					<div className="mb-6 md:mb-0">
+						<Link href="https://flowbite.com/" class="flex items-center">
+							<Image
+								src="/assets/images/logo-white.png"
+								width={200}
+								height={200}
+								alt="JOM Logo"
+								className="sm:ml-28"
+							/>
 						</Link>
 					</div>
-				</div>
-
-				{/* Our Networks */}
-				<div className="flex-col">
-					<h3 className="font-mulish font-bold">Our Networks</h3>
-
-					<div className="border border-[#5E5E5E] w-32 my-3" />
-
-					<div className="grid grid-row-5 gap-3">
-						<Link href="/" className="footer_links">
-							Real Estate
-						</Link>
-
-						<Link href="/" className="footer_links">
-							Charter Planes
-						</Link>
-
-						<Link href="/" className="footer_links">
-							General Trading
-						</Link>
+					<div className="grid grid-cols-2 gap-8 font-mulish sm:gap-6 sm:grid-cols-3">
+						<div>
+							<h2 className="mb-6 text-sm font-semibold text-white uppercase ">
+								Company
+							</h2>
+							<ul className="text-gray-400 font-medium">
+								<li className="mb-4">
+									<Link href="/about-us" className="hover:underline">
+										About Us
+									</Link>
+								</li>
+								<li className="mb-4">
+									<Link href="/our-services" className="hover:underline">
+										Services
+									</Link>
+								</li>
+								<li>
+									<Link href="/careers" className="hover:underline">
+										Careers
+									</Link>
+								</li>
+							</ul>
+						</div>
+						<div>
+							<h2 class="mb-6 text-sm font-semibold text-white uppercase ">
+								Networks
+							</h2>
+							<ul className="text-gray-400 font-medium">
+								<li className="mb-4">
+									<Link href="/" className="hover:underline">
+										Real Estate
+									</Link>
+								</li>
+								<li className="mb-4">
+									<Link href="/" className="hover:underline">
+										Charter Planes
+									</Link>
+								</li>
+								<li>
+									<Link href="/" className="hover:underline">
+										General Trading
+									</Link>
+								</li>
+							</ul>
+						</div>
+						<div>
+							<h2 className="mb-6 text-sm font-semibold text-white uppercase">
+								Legal
+							</h2>
+							<ul className="text-gray-400  font-medium">
+								<li className="mb-4">
+									<Link href="/" className="hover:underline">
+										Privacy Policy
+									</Link>
+								</li>
+								<li>
+									<Link href="/" className="hover:underline">
+										Terms &amp; Conditions
+									</Link>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
-			</div>
-
-			{/* Copyright */}
-			<div className="bg-[#252525] flex-col flex-center">
-				<p className="text-[#5E5E5E] py-3 text-xs font-mulish">
-					Copyright 2023 © JOM International. All Rights Reserved.
-				</p>
+				<hr class="my-6 border-gray-200 sm:mx-auto lg:my-8" />
+				<div class="sm:flex sm:items-center sm:justify-between">
+					<span class="text-sm text-gray-400 sm:text-center">
+						© 2023{" "}
+						<a href="https://flowbite.com/" class="hover:underline">
+							JOM International
+						</a>
+						. All Rights Reserved.
+					</span>
+				</div>
 			</div>
 		</footer>
 	);
