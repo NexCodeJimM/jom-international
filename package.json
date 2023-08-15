@@ -1,7 +1,8 @@
 {
   "name": "jom-international",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "private": true,
+  "author": "Jim Mendoza <contact@jimmendoza.com> (https://jimmendoza.com)",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

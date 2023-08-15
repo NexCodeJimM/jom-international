@@ -4,6 +4,16 @@ import Image from "next/image";
 import Header from "@/components/Header";
 import Card from "@/components/Card";
 
+// Metadata
+export const metadata = {
+	title:
+		"About Us | Luxury Real Estate, Private Air Charters, and Global Trading | JOM International",
+	description:
+		"Learn more about JOM International - your trusted provider of exclusive luxury real estate services, private charter planes for seamless travel, and international trading solutions. Discover how we can help you find your dream property, elevate your air travel experience, and engage in efficient global trading.",
+	keywords:
+		"JOM International, luxury real estate services, private air charters, global trading solutions, luxury properties, private planes, premium real estate agency, property investment consulting, international trading company, real estate agents, luxury property listings, seamless air travel, global import-export services, exclusive properties, luxury lifestyle, efficient trading solutions.",
+};
+
 const aboutus = () => {
 	return (
 		<section className="w-full flex-col flex-center">
